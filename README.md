@@ -11,5 +11,5 @@ Watch source directory for modified files in background. Compile all sources if 
 ## Info:
  - If you want to show more errors, modify "MAXJAVACERRORS"
  - Add "source /path/to/jmonitor.sh" to your .bashrc file. Reload your terminal.
- - Script based from sahsanu answer:  http://superuser.com/questions/956311/con tinuously-detect-new-files-with-inotify-tools-within-multiple-directories-r
+ - Script based from sahsanu answer:  http://superuser.com/questions/956311/continuously-detect-new-files-with-inotify-tools-within-multiple-directories-r
 
