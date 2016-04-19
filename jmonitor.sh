@@ -1,6 +1,6 @@
 #! /bin/bash
 # Author: David Canillas Racero @kartojal
-# Git: 
+# Git: https://github.com/kartojal/jmonitor.sh/
 # Usage:
 #   jmonitor -h -- Show this help.
 #   jmonitor -q -- Kill all monitors.
