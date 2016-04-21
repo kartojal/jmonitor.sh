@@ -34,13 +34,14 @@ jmonitor() {
         return 0
     fi
 
-    inotifywait -m -r -e  modify --format "%f" "$1" | while read MODIFIEDFILE
+    while inotifywait -e  modify --format "%f" "$1" ;
     do
         if [ "$CLEAR" == "yes" ]; then
             clear
         fi
-        echo "File ${MODIFIEDFILE} modified. Compiling..."
+        echo "Files modified. Compiling..."
         cd "$1"
         javac -d "$2" -Xmaxerrs "$MAXJAVACERRORS" *.java && echo "Done"
+        # Add your own stuff to do when the files are modified/saved.
     done
 }
